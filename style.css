@@ -17,11 +17,11 @@
     background-color: transparent;
 }
 .user-icon i{
-    margin-top: 270px;
+    margin-top: 250px;
 }
 .user-name{
     font-size: 20px;
-    margin-top: 380px;
+    margin-top: 370px;
     margin-left: -115px;
 }
 .input-pass{
@@ -47,8 +47,25 @@
     display: flex;
     justify-content:right;
     align-items: right;
-    margin-top: 180px;
+    margin-top: 220px;
     margin-right: 20px;
     color: rgb(167, 159, 159);
     letter-spacing: 25px;
+}
+.input-pass{
+    position: relative;
+    display: inline-block;
+}
+.input-pass i{
+    position: absolute;
+    top: 50%;
+    left: 769px;
+    transform: translateY(-29%);
+    color: #888;
+}
+.input-pass input{
+    padding-left: 0px;
+    height: 30px;
+    width: 200px;
+    margin-left: 590px;
 }
