@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.lock-screen{
+    width: 100%;
+    background: linear-gradient(to top,rgb(0,0,0,0.5)100%,rgb(0,0,0,0.5)100%),url(blur.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.user-icon{
+    font-size: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.user-icon i{
+    margin-top: 270px;
+}
+.user-name{
+    font-size: 20px;
+    margin-top: 380px;
+    margin-left: -115px;
+}
+.input-pass{
+    display: flex;
+    justify-content: center;
+}
+.password{
+    background-color: transparent;
+    color: #000;
+    border: 1px solid lightblue;
+    margin-top: 10px;
+    margin-left: -8px;
+}
+.password:active{
+    color: blue;
+    background-color: transparent;
+}
+.bar-icons{
+    cursor: pointer;
+}
+.icons{
+    font-size: 15px;
+    display: flex;
+    justify-content:right;
+    align-items: right;
+    margin-top: 180px;
+    margin-right: 20px;
+    color: rgb(167, 159, 159);
+    letter-spacing: 25px;
+}
