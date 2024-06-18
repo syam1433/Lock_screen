@@ -1,71 +1,76 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body , html{
+    height: 100%;
 }
 .lock-screen{
     width: 100%;
-    background: linear-gradient(to top,rgb(0,0,0,0.5)100%,rgb(0,0,0,0.5)100%),url(blur.jpeg);
-    background-position: center;
-    background-size: cover;
     height: 100%;
+    background: linear-gradient(to top,rgb(0,0,0,0.5)100%,rgb(0,0,0,0.5)100%),url(blur.jpeg) center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 .user-icon{
-    font-size: 100px;
-    color: white;
     display: flex;
-    justify-content: center;
-    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
 }
 .user-icon i{
-    margin-top: 250px;
+    font-size: 100px;
 }
 .user-name{
     font-size: 20px;
-    margin-top: 370px;
-    margin-left: -115px;
+    margin-top: 10px;
 }
 .input-pass{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
 }
 .password{
+    padding: 10px;
     background-color: transparent;
-    color: #000;
+    color: white;
     border: 1px solid lightblue;
-    margin-top: 10px;
-    margin-left: -8px;
+    width: 200px;
 }
-.password:active{
+.password:focus{
     color: blue;
-    background-color: transparent;
+    outline: none;
+}
+.pass-button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    color: #888;
+    padding: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pass-button:focus{
+    outline: none;
 }
 .bar-icons{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
     cursor: pointer;
 }
 .icons{
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
-    justify-content:right;
-    align-items: right;
-    margin-top: 220px;
-    margin-right: 20px;
+    gap: 30px;
     color: rgb(167, 159, 159);
-    letter-spacing: 25px;
-}
-.input-pass{
-    position: relative;
-    display: inline-block;
-}
-.input-pass i{
-    position: absolute;
-    top: 50%;
-    left: 769px;
-    transform: translateY(-29%);
-    color: #888;
-}
-.input-pass input{
-    padding-left: 0px;
-    height: 30px;
-    width: 200px;
-    margin-left: 590px;
 }
